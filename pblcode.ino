@@ -12,12 +12,12 @@
 
 DHT dht(DHT_PIN, DHT_TYPE);
 
-const char* ssid         = "SRAS2G";
-const char* eap_identity = "am23106";
-const char* eap_username = "am23106";
-const char* eap_password = "AnushkaMandal_Uni1234";
+const char* ssid         = "wifi name";
+const char* eap_identity = "ip address";
+const char* eap_username = "ip address";
+const char* eap_password = "your password";
 
-const char* scriptURL = "https://script.google.com/macros/s/AKfycbyCa364kOUNd56fEuaLX08_vx8EbaRwa-kbvQF_DWZaMb0gWNP5Xl9jvtSfkP6h6O4/exec";
+const char* scriptURL = "https://script.google.com/your url";
 
 bool collecting          = false;
 int  readingCount        = 0;
