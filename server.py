@@ -11,13 +11,13 @@ client = gspread.authorize(creds)
 
 client_ai = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="your api key",
 )
 
 # --- Read all rows from sheet ---
 # Columns: time | temp | humidity | light1 (up) | light2 (right) | light3 (left)
 # Area label rows: standalone rows where first cell has area name, no numeric temp
-sheet = client.open_by_key("1Id_Xqca_o_gnzt7mx754nGBuUQ43yt5CxtrS5wtz54Q").sheet1
+sheet = client.open_by_key("enter your sheet url").sheet1
 all_values = sheet.get_all_values()
 
 if len(all_values) < 2:
@@ -509,3 +509,4 @@ print(f"\n✅ Dashboard generated!")
 print(f"   Temp/Humidity: {len(th_results)} areas ranked")
 print(f"   Light:         {len(light_results)} areas ranked")
 print("   Open dashboard.html in your browser.")
+
